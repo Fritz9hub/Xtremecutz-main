@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>XTREME KUTZ</title>
+    <link rel="icon" href="image/logo1.png" type="image/x-icon">
+    <style>
+        body {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+      
+        body::-webkit-scrollbar {
+          display: none;
+        }
+      </style>
+      
+    </head>    
+<body>
+    <section id=banner>
+        <img src="Barber_Shop_img/logo.png" alt="barber log" class="logo">
+        <div class="banner-text">
+            <h1>XTREME KUTZ</h1>
+            <p>At Xtreme Kutz, we’re more than just barbers we’re artists with clippers, craftsmen of confidence, and curators of style. Based in the heart of Ghana, our shop blends modern flair with sharp precision, giving every client a personalized experience from the moment they walk in.
+            </p>
+
+
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Features.html">Features</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Meet us.html">Meet us</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="Barber_Shop_img/menu.png" id="menu">
+    </div>
+    
+
+<!-- Testimonial -->
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Barber_Shop_img/pet.jpg" alt="">
+                    <div class="user-info">
+                        <h4>peteradade <i class="fa fa-instagram"></i></h4>
+                        <small>@_papa_yao</small>
+                    </div>
+                </div>
+            <p>Best cut I’ve had in a long time! The barber took his time and made sure everything was clean and sharp. <br>I’m definitely coming back</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Barber_Shop_img/gid.jpg" alt="">
+                    <div class="user-info">
+                        <h4>G Wxve<i class="fa fa-instagram"></i></h4>
+                        <small>@g_wxve</small>
+                    </div>
+                </div>
+            <p>The attention to detail is top-notch. Chill environment, friendly barbers <br> 10/10 experience.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Barber_Shop_img/fri.jpg" alt="">
+                    <div class="user-info">
+                        <h4>𝐹𝓇𝒾𝓉𝓏<i class="fa fa-instagram"></i></h4>
+                        <small>@1g.erald</small>
+                    </div>
+                </div>
+            <p>Great vibes and professional service. My son looked so fresh after his trim. Highly recommend!</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    
+    <script>
+        var menuBtn= document.getElementById("menuBtn")
+        var menu= document.getElementById("menu")
+        var sideNav= document.getElementById("sideNav")
+
+        sideNav.style.right="-250px"
+        menuBtn.onclick= function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+                menu.src="Barber_Shop_img/close.png"
+            }else{
+                sideNav.style.right="-250px";
+                menu.src="Barber_Shop_img/menu.png"
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	    speed: 1000,
+        	speedAsDuration: true
+});
+    </script>
+
+    
+</body>
+</html>

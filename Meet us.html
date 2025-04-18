@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>MEET US</title>
+    <link rel="icon" href="image/logo1.png" type="image/x-icon">
+    <style>
+        body {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+      
+        body::-webkit-scrollbar {
+          display: none;
+        }
+      </style>
+</head>
+<body>
+
+</section>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Features.html">Features</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Meet us.html">Meet us</a></li>
+        </ul>
+
+    </nav>
+
+</div>
+<div id="menuBtn">
+    <img src="Barber_Shop_img/menu.png" id="menu">
+</div>
+
+
+    <section id="footer">
+        <img src="Barber_Shop_img/footer-img.png" alt="" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1>Visit Shop Today</h1>
+            <h2>Pull Up. Call Up. Link Up. <br>
+                Whether you’re ready to book, have a question, or just want to vibe with us, we’re here for it</h2>
+        </div>
+        <center> <a href="https://maps.app.goo.gl/r9D129X9BB8qsLck6?g_st=iw"> <img src="image/XTREME KUTZ.png" alt=""> </a></center>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Business Hours</h1>
+                <p><i class="fa fa-clock-o"></i>Monday to Saturday- 9am to 9pm</p>
+                <p><i class="fa fa-clock-o"></i>Sunday - 1:30 pm to 9pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>New Road, Madina<i class="fa fa-map-marker"></i></p>
+                <p>extremectz@gmail.com<i class="fa fa-paper-plane"></i></p>
+                <p>+233 593748190<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <p>Copyright</p>
+        </div>
+
+        <script>
+            var menuBtn= document.getElementById("menuBtn")
+            var menu= document.getElementById("menu")
+            var sideNav= document.getElementById("sideNav")
+    
+            sideNav.style.right="-250px"
+            menuBtn.onclick= function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0";
+                    menu.src="Barber_Shop_img/close.png"
+                }else{
+                    sideNav.style.right="-250px";
+                    menu.src="Barber_Shop_img/menu.png"
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+                speedAsDuration: true
+    });
+        </script>
+    
+
+    
+</body>
+</html>
